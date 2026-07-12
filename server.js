@@ -28,7 +28,7 @@ app.post('/api/lead', async (req, res) => {
 
   const payload = {
     data: [{
-      event_name: 'Lead',
+      event_name: 'CompleteRegistration',
       event_time: Math.floor(Date.now() / 1000),
       event_id: eventId || `tg_${Date.now()}`,
       event_source_url: req.headers.referer || '',
